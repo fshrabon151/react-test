@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/actions/auth";
 import { getProducts } from "../redux/actions/products";
 import SingleProduct from "./layouts/SingleProduct";
+import Spinner from "./layouts/Spinner";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ const Home = () => {
         </button>
       </div>
       {loading ? (
-        <h1>Loading...</h1>
+        <Spinner />
       ) : (
         <>
           <div className="container">
