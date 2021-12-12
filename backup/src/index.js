@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import App from "./App";
 import "./index.css";
 import store from "./redux/store";
+// axios.defaults.baseURL = "https://cityscape21.herokuapp.com";
 
 ReactDOM.render(
   <React.StrictMode>
